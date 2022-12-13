@@ -1,0 +1,383 @@
+        /*Cargamos la fuente más exacta a la de la imagen.
+        Se ha usado "WhatFontIs" para tratar de averiguar la tipografía
+        usada en la imagen. Los resultados no convencían y, además, tenían
+        copyright. Por tanto, se ha elegido una tipografía gratuita: Roboto. */
+        @font-face {
+            font-family: "Roboto-Light";
+            src: url(../assets/Roboto-Light.ttf);
+            font-family: "Roboto-Black";
+            src: url(../assets/Roboto-Black.ttf);
+        }
+
+        /*Para el html entero, la tipografía será Times New Roman,
+         ajustable para tablets y smartphones y para navegadores 
+         basados en WebKit como Safari y Chrome y con separación entre líneas
+         de 1.3 puntos. Iniciamos margen y padding en el body.
+         background: url(../imag/papiro1.jpg) no-repeat center center fixed; 
+         background-size: cover;*/
+        html {
+            font-family: 'Roboto Light', serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            line-height: 1.3;
+        }
+
+        /*Para el cuerpo del documento, definimos el color de fondo y
+            definimos margen y padding a 0 para que la barra de navegación
+            ocupe la totalidad del recuadro asignado.*/
+        body {
+            background-color: #FFFFFF;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            height: 6vh;
+            display: flex;
+            /*Necesitamos centrar los elementos en dirección al eje secundario (vertical)*/
+            flex-direction: row;
+            /*El eje principal será el horizontal.*/
+            align-items: center;
+            /*Los elementos estarán centrados en el eje secundario.*/
+            justify-content: center;
+            /*Para que al hacer zoom se redimensione de manera responsiva*/
+            background-color: #f9fafb;
+            position: sticky;
+            top: 0;
+        }
+
+        #alogoH {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /*Centramos el logo en el menu respecto al eje secundario*/
+            margin-right: auto;
+            margin-left: 12vw;
+            /*Margen izquierdo del elemento más a la izquierdo*/
+        }
+
+        #logoH {
+            width: auto;
+            height: 4vh;
+        }
+
+
+
+        ul#menu1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            /*Los elementos estarán alineados al final*/
+            align-items: center;
+            /*Centramos los li en el menu respecto al eje secundario*/
+            list-style: none;
+            flex: 0 0 60vw;
+            margin: 0vh 12vw 0vh 0vw;
+            /*Margen derecha del elemento más a la derecha*/
+            flex-wrap: nowrap;
+            /*Para  que los elementos no se coloquen unos encima de otros*/
+            text-overflow: ellipsis;
+            padding: 0;
+            /*Existía padding en la redimensión. Nos aseguramos que no crece.*/
+        }
+
+        a.enlacesMenu1 {
+            text-decoration: none;
+            font-size: 1.4vh;
+            padding: 2.3vh 0.5vw;
+            /*Padding de top y bottom debe ser la diferencia entre la altura del header y el tamaño de la  fuente.
+             Padding right se han ajustado a la imagen (lo más pequeño posible para que esté alineado con la imagen de debajo).
+             Padding left permite ajustar los enlaces entre sí. */
+            display: flex;
+            /*Lo hacemos flexible para evitar que se redimensione el contenido del enlace (el texto)*/
+            flex-direction: row;
+            align-items: center;
+            /*Centramos los a en el menu respecto al eje secundario*/
+            color: #D3D4D5;
+            font-family: 'Roboto-Black', serif;
+
+        }
+
+        a.enlacesMenu1:hover {
+            color: #ffffff;
+            background-color: aqua;
+        }
+
+
+        #aboutMe {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #descripcionAboutMe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 12vw;
+            margin-right: auto;
+            padding: 5vh 5vw 5vh 0;
+            width: 35vw;
+        }
+
+        #h1DescripcionAboutMe {
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        #pDescripcionAboutMe {
+            font-size: 3.4vh;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .botonesAzules {
+            font-size: 2vh;
+            padding: 0 0.5vw;
+            margin-top: 6vh;
+            width: 10vw;
+            height: 5vh;
+            background-color: #0087fe;
+            color: white;
+            border-radius: 0.35vh;
+            border-color: white;
+            border-width: 0.1vh;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #fotoPerfil {
+            height: auto;
+            width: 35vw;
+            border-radius: 0.7vh;
+            box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
+            margin: 5vh 12vw 5vh 1vw;
+            /*Margen izquierdo del elemento más a la izquierdo*/
+        }
+/*My Skills*/
+        #mySkills {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            background-color: #f9fafb;
+            padding-top: 6vh;
+        }
+        #h1DescripcionMySkills{
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 0;
+        } #pDescripcionMySkills {
+            font-size: 3.4vh;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #mySkills1 {
+
+            margin-left: 12vw;
+            margin-right: 12vw;
+        }
+
+        #textMySkills1 {}
+
+        #fotoMySkills1 {}
+
+        #fotoMySkills1IMG {}
+
+        #mySkills2 {
+
+            margin-left: 12vw;
+            margin-right: 12vw;
+        }
+
+        #textMySkills2 {}
+
+        #fotoMySkills2 {}
+
+        #fotoMySkills2IMG {}
+/*My Portfolio*/
+#myPortfolio{
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    background-color:white;
+}
+#descripcionMyPortfolio{
+
+    margin: 0 12vw;
+}
+#h1DescripcionMyPortfolio{
+
+}
+#pDescripcionMyPortfolio{
+
+}
+#ulListaPortfolios {
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /*Los elementos estarán alineados al final*/
+            align-items: center;
+            /*Centramos los li en el menu respecto al eje secundario*/
+            list-style: none;
+            /*Margen derecha del elemento más a la derecha*/
+            flex-wrap: nowrap;
+            text-overflow: ellipsis;
+            padding: 0;
+            
+}
+.portfolios{
+
+}
+.imgsPortfolios{
+
+}
+.h1Portfolios{
+
+}
+.descripcionPortfolios{
+
+}
+.botonesPortfolios{
+
+}
+
+/*CONTACTO*/
+        #contact {
+            padding-top: 6vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9fafb;
+        }
+        #descripcionContact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12vw;
+        }
+
+        #h1DescripcionContact {
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #pDescripcionContact {
+            font-size: 3.4vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        #fotoContacto {
+            height: auto;
+            width: 35vw;
+            border-radius: 0.7vh;
+            box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
+            margin: 5vh 12vw 5vh 1vw;
+            /*Margen izquierdo del elemento más a la izquierdo*/
+        }
+
+        #formulario {
+            margin-right: 12vw;
+        }
+
+/*FOOTER*/
+        footer {
+            height: 18vh;
+            display: flex;
+            /*Necesitamos centrar los elementos en dirección al eje secundario (vertical)*/
+            flex-direction: row;
+            /*El eje principal será el horizontal.*/
+            align-items: center;
+            /*Los elementos estarán centrados en el eje secundario.*/
+            justify-content: center;
+            /*Para que al hacer zoom se redimensione de manera responsiva*/
+            background-color: white;
+        }
+
+        #alogoF {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /*Centramos el logo en el menu respecto al eje secundario*/
+            margin-right: auto;
+            margin-left: 12vw;
+            /*20 que es lo que ocupa el texto + el margen de antes*/
+            /*Margen izquierdo del elemento más a la izquierdo*/
+        }
+
+        #logoF {
+            width: auto;
+            height: 4vh;
+        }
+
+        #textF {
+            color: #D3D4D5;
+            font-size: 1.8vh;
+            padding: 0;
+            margin: 0;
+            margin-right: 11.3vw;
+            /*lo centramos manualmente*/
+            width: 20vw;
+        }
+
+        ul#menu2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            /*Los elementos estarán alineados al final*/
+            align-items: center;
+            /*Centramos los li en el menu respecto al eje secundario*/
+            list-style: none;
+            flex: 0 0 60vw;
+            margin: 0vh 12vw 0vh 0vw;
+            /*Margen derecha del elemento más a la derecha*/
+            flex-wrap: nowrap;
+            /*Para  que los elementos no se coloquen unos encima de otros*/
+            text-overflow: ellipsis;
+            padding: 0;
+            /*Existía padding en la redimensión. Nos aseguramos que no crece.*/
+        }
+
+        a.enlacesMenu2 {
+            text-decoration: none;
+            padding: 0.5vh 0.5vw;
+            /*Padding de top y bottom debe ser la diferencia entre la altura del header y el tamaño de la  fuente.
+                 Padding right se han ajustado a la imagen (lo más pequeño posible para que esté alineado con la imagen de debajo).
+                 Padding left permite ajustar los enlaces entre sí. */
+            display: flex;
+            /*Lo hacemos flexible para evitar que se redimensione el contenido del enlace (el texto)*/
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /*Centramos los a en el menu respecto al eje secundario*/
+            color: #3b3c3c;
+            font-family: 'Roboto-Black', serif;
+
+        }
+
+        a.enlacesMenu2:hover {
+            color: #ffffff;
+            background-color: aqua;
+        }
+
+
+
+        #im1F,
+        #im2F,
+        #im3F {
+            width: 4vh;
+            height: 4vh;
+        }
