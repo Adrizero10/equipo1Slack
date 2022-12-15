@@ -31,6 +31,7 @@
             padding: 0px;
         }
 
+
         header {
             height: 6vh;
             display: flex;
@@ -103,7 +104,7 @@
             background-color: aqua;
         }
 
-
+        /*About Me*/
         #aboutMe {
             display: flex;
             flex-direction: row;
@@ -116,9 +117,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            padding: 5vh 0.8vw 5vh 0;
             margin-left: 12vw;
             margin-right: auto;
-            padding: 5vh 5vw 5vh 0;
             width: 35vw;
         }
 
@@ -152,76 +153,146 @@
         }
 
         #fotoPerfil {
-            height: auto;
-            width: 35vw;
+            height: 100vh;
+            width: auto;
+            margin: 4vh 12vw 3vh 0;
             border-radius: 0.7vh;
-            box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
-            margin: 5vh 12vw 5vh 1vw;
-            /*Margen izquierdo del elemento más a la izquierdo*/
+            box-shadow: 0.2vh 0.2vh 0.2vh 0.1vh rgba(0, 0, 0, 0.05);
         }
-/*My Skills*/
+
+        /*My Skills*/
         #mySkills {
             display: flex;
             flex-direction: column;
-            align-items:flex-start;
+            justify-content: center;
+            align-items: flex-start;
             background-color: #f9fafb;
             padding-top: 6vh;
         }
-        #h1DescripcionMySkills{
+
+        #h1DescripcionMySkills {
             font-size: 4.6vh;
             padding: 0;
-            margin: 0;
-        } #pDescripcionMySkills {
+            margin: 0 12vw;
+        }
+
+        #pDescripcionMySkills {
             font-size: 3.4vh;
             padding: 0;
-            margin: 0;
+            margin: 0 12vw;
 
         }
 
-        #mySkills1 {
+        #mySkills1,
+        #mySkills2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 12vw;
 
-            margin-left: 12vw;
-            margin-right: 12vw;
+        }
+
+        #mySkills1 {}
+
+        #mySkills2 {
+            margin-top: 4vh;
+        }
+
+        #textMySkills1,
+        #textMySkills2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         #textMySkills1 {}
 
-        #fotoMySkills1 {}
+        #textMySkills2 {
+            margin-left: 7vw;
+            margin-right: 12vw;
 
-        #fotoMySkills1IMG {}
+        }
 
-        #mySkills2 {
+        .skills1,
+        .skills2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin: 1vw 6vw 1vw 0;
+            height: 6vh;
+            box-shadow: 0.2vh 0.2vh 0.2vh 0.1vh rgba(0, 0, 0, 0.05);
+        }
 
-            margin-left: 12vw;
+        .skills1H3,
+        .skills2H3 {
+            font-size: 2.4vh;
+            width: 4vw;
+            padding: 0.9vh 0;
+            margin: 0;
+
+        }
+
+        .skills1IMG,
+        .skills2IMG {
+
+            height: 4vh;
+            width: 4vw;
+            padding: 0;
+            margin: 0.6vw;
+        }
+
+        .skillsBAR {
+            width: 30vw;
+            height: 3vh;
+            margin: 0 1vw;
+        }
+
+        #fotoMySkills1 {
+            height: 32vh;
+            width: auto;
+            border-radius: 0.7vh;
+            box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
+
+            margin-left: auto;
             margin-right: 12vw;
         }
 
-        #textMySkills2 {}
+        #fotoMySkills2 {
+            height: 32vh;
+            width: auto;
+            border-radius: 0.7vh;
+            box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
 
-        #fotoMySkills2 {}
+        }
 
-        #fotoMySkills2IMG {}
-/*My Portfolio*/
-#myPortfolio{
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: center;
-    background-color:white;
-}
-#descripcionMyPortfolio{
 
-    margin: 0 12vw;
-}
-#h1DescripcionMyPortfolio{
+        /*My Portfolio*/
+        #myPortfolio {
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: white;
+        }
 
-}
-#pDescripcionMyPortfolio{
+        #h1DescripcionMyPortfolio {
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 0 12vw;
+        }
 
-}
-#ulListaPortfolios {
-    display: flex;
+        #pDescripcionMyPortfolio {
+            font-size: 3.4vh;
+            padding: 0;
+            margin: 0 12vw;
+        }
+
+        #ulListaPortfolios {
+            display: flex;
             flex-direction: row;
             justify-content: center;
             /*Los elementos estarán alineados al final*/
@@ -232,68 +303,154 @@
             flex-wrap: nowrap;
             text-overflow: ellipsis;
             padding: 0;
-            
-}
-.portfolios{
 
-}
-.imgsPortfolios{
+            margin-right: 12vw;
 
-}
-.h1Portfolios{
-
-}
-.descripcionPortfolios{
-
-}
-.botonesPortfolios{
-
-}
-
-/*CONTACTO*/
-        #contact {
-            padding-top: 6vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            background-color: #f9fafb;
         }
-        #descripcionContact {
+
+        #portfolios1,
+        #portfolios2,
+        #portfolios3,
+        #portfolios4 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            margin-left: 12vw;
+            /*Los elementos estarán alineados al final*/
+            align-items: flex-start;
+        }
+
+        #portfolios1 {
+            margin: 1vh 0 0 12vw;
+        }
+
+        #portfolios2,
+        #portfolios3 {
+            margin: 1vh 2vw;
+        }
+
+        #portfolios4 {}
+
+        .imgsPortfolios {
+            width: 22vw;
+            height: 15vh;
+        }
+
+        .h1Portfolios {
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 1vh 1vw;
+        }
+
+        .descripcionPortfolios {
+            font-size: 4.6vh;
+            padding: 0;
+            margin: 1vh 1vw;
+        }
+
+        .botonesPortfolios {}
+
+        /*CONTACTO*/
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f9fafb;
+            padding: 0;
         }
 
         #h1DescripcionContact {
-            font-size: 4.6vh;
+            font-size: 3.9vh;
             padding: 0;
             margin: 0;
+            margin: 0 12vw;
         }
 
 
         #pDescripcionContact {
-            font-size: 3.4vh;
+            font-size: 2.2vh;
             padding: 0;
-            margin: 0;
+            margin: 0 0 7vh 0;
+
+            margin: 0 12vw;
+            /*Se coloca así porque sino, se descuadra*/
         }
+
+
+
+        #formularioDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0 12vw;
+        }
+
 
         #fotoContacto {
             height: auto;
-            width: 35vw;
+            width: 27vw;
             border-radius: 0.7vh;
             box-shadow: 0.5vh 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.05);
-            margin: 5vh 12vw 5vh 1vw;
             /*Margen izquierdo del elemento más a la izquierdo*/
+            margin-right: auto;
+
         }
 
         #formulario {
-            margin-right: 12vw;
+            margin-left: 6vw;
         }
 
-/*FOOTER*/
+
+        #firstNameD {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #firstNameL {
+            font-size: 2.2vh;
+        }
+
+        #firstNameTB {}
+
+        #LastNameD {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+
+        }
+
+        #LastNameL {
+            font-size: 2.2vh;
+
+        }
+
+        #LastNameTB {}
+
+
+
+        #emailL {
+
+            font-size: 2.2vh;
+        }
+
+        #emailTB {}
+
+
+        #messageTA {}
+
+        #messageL {
+            font-size: 2.2vh;
+
+        }
+
+        #enviar {
+            font-size: 2.2vh;
+
+        }
+
+        /*FOOTER*/
         footer {
             height: 18vh;
             display: flex;
